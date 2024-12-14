@@ -18,7 +18,7 @@ Ensure you have the following installed on your system:
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/TI-4550.git
+git clone [https://github.com/your-username/TI-4550.git](https://github.com/hanskrio/TI-4550.git)
 cd TI-4550
 
 2. Install Required Python Packages
