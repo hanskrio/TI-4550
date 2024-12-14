@@ -17,9 +17,9 @@ Ensure you have the following installed on your system:
 
 1. Clone the Repository
 
-git clone [https://github.com/your-username/TI-4550.git](https://github.com/hanskrio/TI-4550.git)
+- git clone [https://github.com/your-username/TI-4550.git](https://github.com/hanskrio/TI-4550.git)
 
-cd TI-4550
+- cd TI-4550
 
 2. Install Required Python Packages
 
@@ -45,10 +45,10 @@ In my opinion, it is necessary to set up BOPTEST locally. The BOPTEST-Service co
 ### Or, follow the instructions for setting up `boptestgym`from:
 https://github.com/ibpsa/project1-boptest-gym
 
-6. Run Your First Simulation
+6. Train RL agents or run simulations with already trained agents from this repository :) 
 
 Execute a test script to ensure everything is set up correctly:
-python scripts/test_boptestgym.py
+TBD
 
 Troubleshooting
 - Docker connection issues: Ensure Docker is running, and the container is active.
