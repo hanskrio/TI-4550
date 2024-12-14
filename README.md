@@ -18,8 +18,8 @@ Ensure you have the following installed on your system:
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/RL_energy.git
-cd RL_energy
+git clone https://github.com/your-username/TI-4550.git
+cd TI-4550
 
 2. Install Required Python Packages
 
