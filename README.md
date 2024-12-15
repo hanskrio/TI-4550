@@ -33,14 +33,17 @@ source venv/bin/activate
 Follow the official instructions to set up BOPTEST:
 https://github.com/ibpsa/project1-boptest
 
-4. Set Up boptestgym
+4. Set Up boptestgym (see below)
 
-## Quick-Start (running BOPTEST locally)
-In my opinion, it is necessary to set up BOPTEST locally. The BOPTEST-Service code from https://github.com/ibpsa/project1-boptest-gym is useful for exploration but has limitations. For example, the DQN model parameters (e.g., batch_size=24 and buffer_size=365*24) are unusually small, and the simulation runs for only 24 hours. These settings are generally are not suitable research and experimentation.
+#### Quick-Start (running BOPTEST locally)
+Setting up BOPTEST locally provides significant advantages for research and experimentation. 
+
+Note: While the BOPTEST-Service code from [https://github.com/ibpsa/project1-boptest-gym](https://github.com/ibpsa/project1-boptest-gym) serves as a useful starting point for exploration, it has several technical constraints. The implemented DQN model parameters, including the batch size of 24 and buffer size of 365*24, are substantially smaller than typically recommended values for reinforcement learning research. Additionally, the 24-hour simulation duration limits the ability to evaluate long-term control strategies and system behaviors. For research applications and experimentation, these default configurations require modification to align with theory.
 
 1. Create a conda environment from the environment.yml file provided (instructions [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)).
 2. Run a BOPTEST case with the building emulator model to be controlled (instructions [here](https://github.com/ibpsa/project1-boptest/blob/master/README.md)).
-3. Set up a like url = 'http://127.0.0.1:5000' from your machine to the BOPTEST server.
+3. Set up an url = 'http://127.0.0.1:5000' from your machine to the BOPTEST server. To identify if port 5000 is already in use, you can use the following command in your terminal: `lsof -i :5000`
+
 
 ### Or, follow the instructions for setting up `boptestgym`from:
 https://github.com/ibpsa/project1-boptest-gym
