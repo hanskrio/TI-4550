@@ -44,6 +44,21 @@ Note: While the BOPTEST-Service code from [https://github.com/ibpsa/project1-bop
 2. Run a BOPTEST case with the building emulator model to be controlled (instructions [here](https://github.com/ibpsa/project1-boptest/blob/master/README.md)).
 3. Set up an url = 'http://127.0.0.1:5000' from your machine to the BOPTEST server. To identify if port 5000 is already in use, you can use the following command in your terminal: `lsof -i :5000`
 
+##### 
+Note that in the original environment.yml, the following dependencies are Linux-specific system libraries:
+
+libgcc-ng and libstdcxx-ng: These are the GNU C and C++ standard libraries.
+libgomp: This is the GNU OpenMP implementation for parallel programming.
+ld_impl_linux-64: This refers to the GNU linker for Linux 64-bit systems.
+libuuid: This is the Linux library for generating unique identifiers.
+
+The creaters of boptestgym have these libraries included because the environment is designed to run on a Linux system. 
+Therefore, in this repo I have written and provided environment_M1.yml file, which defines a Python environment named "boptestgym" specifically tailored for macOS systems with Apple Silicon (M1) processors. This environment includes a list of Python packages and their dependencies required for the boptestgym project.
+- the updated environment removes Linux-specific packages and focuses on cross-platform dependencies.
+- it includes packages compatible with macOS and Apple Silicon (M1) processors.
+- some packages, such as those related to NVIDIA GPUs, have been omitted as they are not applicable to the macOS environment. Use MPS instead if you want to train an agent on M1 GPU's. 
+
+
 
 #### Or, follow the instructions for setting up `boptestgym`from:
 https://github.com/ibpsa/project1-boptest-gym
@@ -58,3 +73,5 @@ Troubleshooting
 - Port conflicts: Check if port 5000 is already in use. Modify the `-p` option in the `docker run` command if necessary (e.g., `-p 5001:5000`).
 - Dependency errors: Ensure all packages in `requirements.txt` are installed without errors.
 
+Acknowledgements
+- boptestGymEnv.py is written by Javier Arroyo for the original boptestgym project (Jun 4 2020), hence not written by the owner of this repo.
