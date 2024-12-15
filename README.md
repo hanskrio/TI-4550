@@ -46,11 +46,10 @@ Note: While the BOPTEST-Service code from [https://github.com/ibpsa/project1-bop
 
 ##### 
 Note that in the original environment.yml, the following dependencies are Linux-specific system libraries:
-
-libgcc-ng and libstdcxx-ng: These are the GNU C and C++ standard libraries.
-libgomp: This is the GNU OpenMP implementation for parallel programming.
-ld_impl_linux-64: This refers to the GNU linker for Linux 64-bit systems.
-libuuid: This is the Linux library for generating unique identifiers.
+- libgcc-ng and libstdcxx-ng: These are the GNU C and C++ standard libraries.
+- libgomp: This is the GNU OpenMP implementation for parallel programming.
+- ld_impl_linux-64: This refers to the GNU linker for Linux 64-bit systems.
+- libuuid: This is the Linux library for generating unique identifiers.
 
 The creaters of boptestgym have these libraries included because the environment is designed to run on a Linux system. 
 Therefore, in this repo I have written and provided environment_M1.yml file, which defines a Python environment named "boptestgym" specifically tailored for macOS systems with Apple Silicon (M1) processors. This environment includes a list of Python packages and their dependencies required for the boptestgym project.
