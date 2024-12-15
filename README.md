@@ -1,5 +1,5 @@
 # TI-4550
-This repository contains code for simulating heat pump control scenarios using reinforcement learning, developed as part of the TIØ4550 project thesis. Follow the steps below to set up the boptestgym environment and run simulations.
+This repository contains code for simulating heat pump control scenarios using reinforcement learning, developed as part of the TIØ4550 project thesis. Follow the steps below to set up the boptestgym environment.
 
 ## Setup Instructions for the project.
 
