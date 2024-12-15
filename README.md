@@ -45,7 +45,7 @@ Note: While the BOPTEST-Service code from [https://github.com/ibpsa/project1-bop
 3. Set up an url = 'http://127.0.0.1:5000' from your machine to the BOPTEST server. To identify if port 5000 is already in use, you can use the following command in your terminal: `lsof -i :5000`
 
 
-### Or, follow the instructions for setting up `boptestgym`from:
+#### Or, follow the instructions for setting up `boptestgym`from:
 https://github.com/ibpsa/project1-boptest-gym
 
 6. Train RL agents or run simulations with already trained agents from this repository :) 
