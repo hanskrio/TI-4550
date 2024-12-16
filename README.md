@@ -65,12 +65,39 @@ https://github.com/ibpsa/project1-boptest-gym
 6. Train RL agents or run simulations with already trained agents from this repository :) 
 
 Execute a test script to ensure everything is set up correctly:
-TBD
+Access the Integrated Terminal Within the Docker Container
+- Using Docker Desktop:
+- Open Docker Desktop and navigate to the Containers section.
+- Locate the container running your RL service (e.g., rl_service).
+- Click on the CLI or Terminal button to open an integrated terminal session within the container.
+
+##### Example bash commands could look something like:
+Open your terminal and navigate to the project directory
+`cd /Users/yourusername/projects/TI-4550/boptest`
+
+Start Docker containers
+`docker-compose up -d`
+
+List running containers to find your target container
+`docker ps`
+
+Access the container's terminal
+`docker exec -it rl_service_container /bin/bash`
+
+Navigate to the script directory inside the container
+`cd /app/scripts`
+
+Install dependencies if necessary
+`pip install -r requirements.txt`
+
+Run the RL test script
+`python RL_testscript.py`
 
 Troubleshooting
 - Docker connection issues: Ensure Docker is running, and the container is active.
 - Port conflicts: Check if port 5000 is already in use. Modify the `-p` option in the `docker run` command if necessary (e.g., `-p 5001:5000`).
 - Dependency errors: Ensure all packages in `requirements.txt` are installed without errors.
+- If you’re encountering issues related to Python module imports, you might need to set the PYTHONPATH environment variable to include your project’s directory. Try `export PYTHONPATH=$PYTHONPATH:/path/to/your/project/directory`
 
 Acknowledgements
 - boptestGymEnv.py is written by Javier Arroyo for the original boptestgym project (Jun 4 2020), hence not written by the owner of this repo.
