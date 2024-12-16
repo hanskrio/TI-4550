@@ -65,13 +65,11 @@ https://github.com/ibpsa/project1-boptest-gym
 6. Train RL agents or run simulations with already trained agents from this repository :) 
 
 Execute a test script to ensure everything is set up correctly:
-Access the Integrated Terminal Within the Docker Container
-- Using Docker Desktop:
 - Open Docker Desktop and navigate to the Containers section.
 - Locate the container running your RL service (e.g., rl_service).
 - Click on the CLI or Terminal button to open an integrated terminal session within the container.
 
-##### Example bash commands could look something like:
+#### When in the integrated terminal, example bash commands could look something like:
 Open your terminal and navigate to the project directory
 `cd /Users/yourusername/projects/TI-4550/boptest`
 
